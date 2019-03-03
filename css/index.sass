@@ -1,0 +1,158 @@
+// Base Styles
+//------------------------------
+
+body
+  font-family: "Open Sans", sans-serif
+
+// Typography
+//------------------------------
+h1
+  weight: 300
+
+.fixed-bg
+  height: 100%
+  width: 100%
+  position: fixed
+  top: 0px
+  left: 0px
+  z-index: 0
+  background-color: $pale-yellow
+  -webkit-transition: background-color 1s
+
+// Navbar
+//------------------------------
+.nav
+  position: relative
+  height: 100px
+
+.logo
+  position: fixed
+  height: 80px
+  width: 100%
+  z-index: 3
+  background:
+    image: url(../images/logo.png)
+    position: 3% 3%
+    repeat: no-repeat
+    attachment: fixed
+
+// Content Container
+//------------------------------
+.content
+  margin: 3%
+  height: 100%
+
+// Sections
+//------------------------------
+
+.intro
+  position: relative
+  margin: 5%
+  color: black
+  font-size: 36px
+  font-weight: bold
+  text-align: justify
+
+// Projects
+//------------------------------
+.projects
+  position: relative
+  padding-top: 300px
+  padding-bottom: 100px
+  z-index: 2
+
+.projects .miniview
+  background-color: white
+
+.projects img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.projects p
+  margin: 3px
+  background-color: white
+
+
+
+// Github
+//------------------------------
+.github
+  position: relative
+  height: 800px
+
+  a
+    color: white
+  a:hover
+    color: $gray
+
+.github .container
+  position: relative
+  top: 50%
+  left: 50%
+  margin-left: -150px
+  width: 300px
+  height: 100px
+  background-color: black
+
+.github .handle
+  position: relative
+  top: 15%
+  left: 16%
+  color: white
+  font-size: 36px
+  font-weight: 900
+
+.github-fadein
+  position: absolute
+  width: 100%
+  height: 100%
+  object-fit: cover
+  opacity: 0
+  transition: opacity 1s ease-in-out
+  -moz-transition: opacity 1s ease-in-out
+  -webkit-transition: opacity 1s ease-in-out
+
+// Sharing
+//------------------------------
+.links
+  position: relative
+  height: 1000px
+
+// Contact
+//------------------------------
+.contact
+  position: relative
+  height: 700px
+
+  a
+    color: white
+
+  a:hover
+    color: $pale-yellow
+
+.contact .container
+  position: relative
+  top: 45%
+  left: 50%
+  margin-left: -150px
+  width: 300px
+  height: 100px
+
+.contact .handle
+  position: relative
+  color: white
+  font-size: 36px
+  font-weight: 900
+  top: 50%
+  left: 50%
+  margin-left: -100px
+  margin-top: -30px
+
+.contact-fadein
+  position: absolute
+  object-fit: cover
+  opacity: 0
+  transition: opacity 1s ease-in-out
+  -moz-transition: opacity 1s ease-in-out
+  -webkit-transition: opacity 1s ease-in-out
