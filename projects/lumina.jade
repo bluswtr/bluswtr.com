@@ -1,0 +1,24 @@
+-var images = ["A", "B", "C"]
+
+  include ../templates/header.jade
+
+  body
+
+    header.nav
+      .logo
+    .content
+        section.project
+            .row
+                .three.columns.project-sidebar
+                    p This is a frontend project. I was given a template and waded through already existing HTML, CSS and AngularJS to insert new styles and javascript. I also wrote code when a feature was needed. I translated the design for a Chinese audience later on as well.
+
+                    p One time, we wanted a better way for our users to answer the questionnaire. I made an animated one in AngularJS.
+
+                    p Another time, we wanted to impress our users when viewing their results. Another animated solution involving graphs came about.
+
+                .nine.columns.project-main
+                    p
+                      img(src="../images/healthco/treatments.png")
+
+                    p
+                      img(src="../images/healthco/graph-animation.gif")
