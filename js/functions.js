@@ -1,13 +1,13 @@
 var introHeight = $('.intro').offset().top;
 var projectsHeight = $('.projects-index').offset().top;
-var githubHeight = $('.github').offset().top;
-var linksHeight = $('.links').offset().top;
-var contactHeight = $('.contact').offset().top;
+// var githubHeight = $('.github').offset().top;
+// var linksHeight = $('.links').offset().top;
+// var contactHeight = $('.contact').offset().top;
 
 var init = function(){
 
 }
-console.log("intro: " + introHeight + ", projects: " + projectsHeight + ", github: " + githubHeight + ", links: " + linksHeight + ", contact: " + contactHeight);
+// console.log("intro: " + introHeight + ", projects: " + projectsHeight + ", github: " + githubHeight + ", links: " + linksHeight + ", contact: " + contactHeight);
 
 $(window).scroll(function(){
 
@@ -38,9 +38,9 @@ $(window).scroll(function(){
 
   var totalHeight = $(document).height();
   bgcolorFadeIn(introHeight,projectsHeight,"intro",'#fbe4a6');
-  bgcolorFadeIn(projectsHeight,githubHeight,"projects",'#ffffff');
-  bgcolorFadeIn(linksHeight,contactHeight,"links",'#f58b7a');
-  imageFadeIn(githubHeight,linksHeight,"github","white");
-  imageFadeIn(contactHeight,totalHeight,"contact","#edba1c");
+  // bgcolorFadeIn(projectsHeight,githubHeight,"projects",'#ffffff');
+  // bgcolorFadeIn(linksHeight,contactHeight,"links",'#f58b7a');
+  imageFadeIn(projectsHeight,totalHeight,"projects","white");
+  // imageFadeIn(contactHeight,totalHeight,"contact","#edba1c");
 
 });
