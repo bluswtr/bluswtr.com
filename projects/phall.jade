@@ -1,17 +1,14 @@
 -var images = ["A", "B", "C"]
 
-  include ../templates/header.jade
+include ../templates/header.jade
 
-  body
+.wrapper
+  section.project-wrapper
+    .row
+      .three.columns.project-sidebar
+        p This client wanted a revamp of their site. One of the more interesting challenges included a new logo which was a little long so I did an animated logo.
 
-    header.nav
-      .logo
-    .content
-        section.project
-            .row
-                .three.columns.project-sidebar
-                    p This client wanted a revamp of their site. One of the more interesting challenges included a new logo which was a little long so I did an animated logo. 
-
-                .nine.columns.project-main
-                    p
-                      img(src="../images/phall/paulhall-screenshot.png")
+      .nine.columns.project-main
+        p
+          img(src="../images/phall/paulhall-screenshot.png")
+include ../templates/footer.jade

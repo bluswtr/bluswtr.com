@@ -1,40 +1,22 @@
-doctype html
-html(lang="en")
+include templates/header.jade
+.fixed-bg
+  img.projects-index-fadein(src="images/flower-pattern.png")
+.wrapper
 
-  head
-    meta(charset="utf-8")
-    title c.shum
-    meta(name="description", content="")
-    meta(name="author", content="")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    link(rel="stylesheet", href="css/style.css")
-    link(rel="stylesheet" href="css/font-awesome.min.css")
+  section.intro
+    p Hello and thanks for stopping by. Below is a display of some of my work to help you decide whether I'm the right fit for your project. Maybe you have questions? Are you wondering what you'll need to complete your vision? Don't see what you're looking for? <a href="mailto:hello@cheirieshum.com">Just ask!</a>
 
-  body
+  section.projects-index
+    .row.projects-index-center
+      .four.columns.mini-view
+        a(href="projects/phall.html")
+          img(src="images/1-preview.png")
 
-    .fixed-bg
-      img.projects-fadein(src="images/flower-pattern.png")
-      img.contact-fadein(src="images/pencils.jpg")
+      .four.columns.mini-view
+        a(href="projects/lumina.html")
+          img(src="images/2-preview.png")
 
-    header.nav
-      .logo
-    .content
+      .four.columns.mini-view
+        img(src="images/3-preview.png")
 
-      section.intro
-        p Hello and thanks for stopping by. Below is a display of some of my work to help you decide whether I'm the right fit for your project. Have questions? Wondering what you will need to complete your vision? Don't see what you're looking for? <a href="mailto:hello@cheirieshum.com">Just ask!</a>
-
-      section.projects-index
-        .row
-          .four.columns.mini-view
-            a(href="projects/phall.html")
-              img(src="images/1-preview.png")
-
-          .four.columns.mini-view
-            a(href="projects/lumina.html")
-              img(src="images/2-preview.png")
-
-          .four.columns.mini-view
-            img(src="images/3-preview.png")
-
-    script(src="js/jquery-2.1.3.min.js")
-    script(src="js/functions.min.js")
+include templates/footer.jade

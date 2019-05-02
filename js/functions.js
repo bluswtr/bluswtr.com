@@ -12,7 +12,7 @@ var init = function(){
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
-  console.log("scrolltop: " + wScroll);
+  // console.log("scrolltop: " + wScroll);
 
   function imageFadeIn(top,bottom,elName,bgColor) {
     if (top <= wScroll && wScroll <= bottom) {
@@ -37,10 +37,11 @@ $(window).scroll(function(){
   }
 
   var totalHeight = $(document).height();
-  bgcolorFadeIn(introHeight,projectsHeight,"intro",'#fbe4a6');
+  var peachColor = '#f6dccb';
+  bgcolorFadeIn(introHeight,projectsHeight-300,"intro",peachColor);
   // bgcolorFadeIn(projectsHeight,githubHeight,"projects",'#ffffff');
   // bgcolorFadeIn(linksHeight,contactHeight,"links",'#f58b7a');
-  imageFadeIn(projectsHeight,totalHeight,"projects","white");
+  imageFadeIn(projectsHeight-300,totalHeight,"projects","white");
   // imageFadeIn(contactHeight,totalHeight,"contact","#edba1c");
 
 });
