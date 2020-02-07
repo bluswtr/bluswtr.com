@@ -9,17 +9,27 @@ html(lang="en")
     meta(name="description", content="")
     meta(name="author", content="")
     meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon" type="image/x-icon" href=root + "images/favicon.ico")
     link(rel="stylesheet", href=root+"css/style.css")
     link(rel="stylesheet" href=root+"css/font-awesome.min.css")
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151447879-1"></script>
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+       
+      gtag('config', 'UA-151447879-1');
+
 
   body
 
     nav
       ul.nav-wrapper
-        li
-          h1.nav-logo
-            a(href=root)
-              img(src=root+"images/logo.png")
+        li.nav-logo
+          a(href=root)
+              img(src=root + "images/logo.png")
         li.nav-push
-          p
-            a(href="mailto:hello@cheirieshum.com") ✉️
+          <a href="#{root}">WEB PROJECTS</a> | 
+          <a href="#{root}art/">ART</a> | 
+          a(href="mailto:hello@bluswtr.com") EMAIL ME

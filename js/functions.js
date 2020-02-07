@@ -12,9 +12,9 @@ var init = function(){
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
-  // console.log("scrolltop: " + wScroll);
 
   function imageFadeIn(top,bottom,elName,bgColor) {
+    // console.log("scrolltop: " + wScroll);
     if (top <= wScroll && wScroll <= bottom) {
       $('.' + elName + '-fadein').css({
         'background-color' : bgColor,
@@ -41,7 +41,7 @@ $(window).scroll(function(){
   bgcolorFadeIn(introHeight,projectsHeight-300,"intro",peachColor);
   // bgcolorFadeIn(projectsHeight,githubHeight,"projects",'#ffffff');
   // bgcolorFadeIn(linksHeight,contactHeight,"links",'#f58b7a');
-  imageFadeIn(projectsHeight-300,totalHeight,"projects","white");
+  imageFadeIn(projectsHeight-300,totalHeight,"projects-index","white");
   // imageFadeIn(contactHeight,totalHeight,"contact","#edba1c");
 
 });
